@@ -1,0 +1,3 @@
+func (repo *GitRepository) commit(message string) {
+ commitID := fmt.Sprintf("%s_commit_%d", repo.currentBranch, 
+len(repo.branches[repo.currentBranch])+1)
